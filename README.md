@@ -1,4 +1,4 @@
-# DeepLearning_ClassificationWithVGG19
+# Deep Learning Classification with different Network Architectures
 Compare different networks for the breast cancer Image classification 
 
 ## Project details
