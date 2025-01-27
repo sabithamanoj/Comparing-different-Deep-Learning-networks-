@@ -16,7 +16,6 @@ from sklearn.model_selection import train_test_split
 
 # import functions from utils.py
 import sys
-sys.path.append('/home/goetz-2/projects/ultrasound-and-ai/BreastCancerClassification/src')
 from utils import generate_data_paths_with_label
 from utils import fit_evaluate
 from utils import visualize_model_performance
@@ -36,7 +35,7 @@ def main():
     logging.info("GPU available: {}".format(tf.config.list_physical_devices('GPU')))
 
     # Generate data paths with labels
-    data_directory = '/home/goetz-2/DataSet/Ultrasound/Kaggle_BreastCancerDataset/archive/Dataset_BUSI_with_GT'
+    data_directory = '/path/to/data_directory'
     df = generate_data_paths_with_label(data_directory)
     logging.info('******************************************************************************')
     logging.info('Printing dataframe that contains image file paths and the corresponding labels')
